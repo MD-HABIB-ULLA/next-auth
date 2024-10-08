@@ -9,17 +9,13 @@ export const loginSchemas = z.object({
   }),
 });
 export const registerSchemas = z.object({
-  name: z.string().min(1, {
+  name: z.string().min(1,{
     message: "Name is required ",
   }),
   email: z.string().email({
     message: "Email is required ",
   }),
-  password: z
-    .string({
-      message: "Password is required ",
-    })
-    .min(6, {
-      message: "Min 6 character required",
-    }),
+  password: z.string().min(1, {
+    message: "Password is required ",
+  }),
 });
