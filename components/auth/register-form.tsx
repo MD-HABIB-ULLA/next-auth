@@ -15,10 +15,11 @@ import {
 import { CardWrapper } from "./card-wrapper";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {  register } from "@/actions/login";
+
 import { useState, useTransition } from "react";
 import { FromError } from "./form-error";
 import { FromSuccess } from "./form-success";
+import { register } from "@/actions/register";
 
 const RegisterForm = () => {
   const [error, setError] = useState<string | undefined>("");
